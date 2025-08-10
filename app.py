@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="📊",
     layout="wide",
 )
-df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
+df = pd.read_csv("df.csv")
 
 #barra
 st.sidebar.title('🔎Filtros')
@@ -171,3 +171,4 @@ with col_graf4:
 st.markdown('---')
 st.subheader('Dados Completos🎲🔍')
 st.dataframe(df_filter)
+
