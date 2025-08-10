@@ -50,6 +50,16 @@ st.markdown(
 
 st.markdown(
     '''
+     <style data-emotion="st-emotion-cache" data-s="">
+        .st-emotion-cache-1dp5vir {
+            background-image: linear-gradient(90deg, rgb(255 75 233), rgb(125 143 255));
+        }
+    </style>
+        ''', unsafe_allow_html=True
+)
+
+st.markdown(
+    '''
      <style media>
         .st-bq {
             background-color: rgb(239 75 255);
@@ -159,4 +169,5 @@ with col_graf4:
 
 st.markdown('---')
 st.subheader('Dados Completos🎲🔍')
+
 st.dataframe(df_filter)
