@@ -38,6 +38,25 @@ df_filter = df [
     (df['contrato'].isin(contrato_selected)) &
     (df['tamanho_empresa'].isin(tamempresa_selected))
 ]
+st.markdown(
+    '''
+     <style data-emotion="st-emotion-cache" data-s="">
+        .st-emotion-cache-1r61a0z {
+            background-image: linear-gradient(90deg, rgb(255 75 233), rgb(125 143 255));
+        }
+    </style>
+        ''', unsafe_allow_html=True
+)
+
+st.markdown(
+    '''
+     <style media>
+        .st-bq {
+            background-color: rgb(239 75 255);
+        }
+    </style>
+        ''', unsafe_allow_html=True
+)
 
 #conteúdo do site
 st.title('📊🎲Dashboard de Salários na Área de Dados')
@@ -139,5 +158,5 @@ with col_graf4:
         st.warning('Nenhum dado para exibir o gráfico de países')
 
 st.markdown('---')
-st.subheader('Dados Completos')
+st.subheader('Dados Completos🎲🔍')
 st.dataframe(df_filter)
