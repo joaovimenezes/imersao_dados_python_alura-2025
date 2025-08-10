@@ -38,6 +38,7 @@ df_filter = df [
     (df['contrato'].isin(contrato_selected)) &
     (df['tamanho_empresa'].isin(tamempresa_selected))
 ]
+
 st.markdown(
     '''
      <style data-emotion="st-emotion-cache" data-s="">
@@ -171,3 +172,4 @@ st.markdown('---')
 st.subheader('Dados Completos🎲🔍')
 
 st.dataframe(df_filter)
+
