@@ -12,7 +12,7 @@ st.set_page_config(
 df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
 
 #barra
-st.sidebar.header('🔎Filtros')
+st.sidebar.title('🔎Filtros')
 
 #filtro ano
 anos_disp = sorted(df['ano'].unique())
@@ -75,7 +75,7 @@ st.markdown('Visualize os dados salariais da área de dados ao longo dos anos no
 st.markdown('---')
 
 #KPI's
-st.subheader('KPIs Gerais🧮  (Salário anual em USD💵)')
+st.subheader('KPIs Gerais🧮  (Salário anual em USD)')
 
 if not df_filter.empty:
     salario_medio = df_filter['usd'].mean()
@@ -87,10 +87,10 @@ else:
     salario_medio, salario_max, total_register, cargo_mais_frequente = 0, 0, 0, ""
 
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("Salário Médio 💰", f'${salario_medio:,.0f}')
-col2.metric("Salário Máximo 🤑", f'${salario_max:,.0f}')
-col3.metric('Total de Registros 🔢', f'{total_register:,}')
-col4.metric('Cargo Mais Frequente 🧑‍💼', cargo_mais_frequente)
+col1.metric("Salário Médio", f'${salario_medio:,.0f}')
+col2.metric("Salário Máximo", f'${salario_max:,.0f}')
+col3.metric('Total de Registros', f'{total_register:,}')
+col4.metric('Cargo Mais Frequente', cargo_mais_frequente)
     
 st.markdown('---')
 
@@ -170,6 +170,4 @@ with col_graf4:
 
 st.markdown('---')
 st.subheader('Dados Completos🎲🔍')
-
 st.dataframe(df_filter)
-
