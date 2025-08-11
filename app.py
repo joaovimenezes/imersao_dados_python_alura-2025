@@ -71,7 +71,7 @@ st.markdown(
 
 #conteúdo do site
 st.title('📊🎲Dashboard de Salários na Área de Dados')
-st.markdown('Visualize os dados salariais da área de dados ao longo dos anos no mundo todo. Utilize os filtros à esquerda para uma anáalise mais específica.')
+st.markdown('Visualize os dados salariais da área de dados ao longo dos anos no mundo todo. Utilize os filtros à esquerda para uma análise mais específica.')
 st.markdown('---')
 
 #KPI's
