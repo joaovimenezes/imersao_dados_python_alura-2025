@@ -172,3 +172,16 @@ st.markdown('---')
 st.subheader('Dados Completos🎲🔍')
 st.dataframe(df_filter)
 
+#creditos
+st.markdown('---')
+st.text('By João Menezes')
+st.markdown(
+    '''
+     <style data-emotion="st-emotion-cache" data-s="">
+        .st-emotion-cache-1o77jex {
+            color: rgb(239 75 255 / 67%);
+            font-size: 10px
+        }
+    </style>
+        ''', unsafe_allow_html=True
+)
