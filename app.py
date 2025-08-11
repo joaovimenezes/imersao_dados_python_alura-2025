@@ -185,3 +185,13 @@ st.markdown(
     </style>
         ''', unsafe_allow_html=True
 )
+st.markdown(
+    '''
+     <style data-emotion="st-emotion-cache" data-s="">
+        .st-emotion-cache-ah6jdd{
+            color: rgb(239 75 255 / 67%);
+            font-size: 10px
+        }
+    </style>
+        ''', unsafe_allow_html=True
+)
